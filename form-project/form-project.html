@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">What is your name? <input type="text" id="name" required placeholder="Enter your name"></label>
+        <label id="email-label" for="email">What is your email? <input type="email" id="email" required placeholder="Enter your email"></label>
+        <label id="number-label" for="number">What is your favorite number? (optional) <input type="number" id="number" min=0 max=100 placeholder="Enter a number between 0 and 100">
+        <label for="dropdown">What is your favorite animal?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value=1>Dog</option>
+            <option value=2>Cat</option>
+            <option value=3>Hamster</option>
+          </select>
+        </label>
+        <p class="question"> Which team are you on?</p>
+        <label for="red"><input type="radio" id="red" name="team" class="inline" value=1> Red</label>
+        <label for="blue"><input type="radio" id="blue" name="team" class="inline" value=2> Blue</label>
+        <p class="question"> Where did you hear about us?</p>
+        <label for="friend"><input type="checkbox" id="friend" value=1 class="inline"> A friend</label>
+        <label for="internet"><input type="checkbox" id="internet" value=2 class="inline"> The Internet</label> 
+        <label for="news"><input type="checkbox" id="news" value=3 class="inline"> The news</label> 
+        <label for="suggestions"> Do you have any suggestions for us?
+          <textarea id="suggestions" placeholder="I would like to see more..." rows=3 cols=30></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
